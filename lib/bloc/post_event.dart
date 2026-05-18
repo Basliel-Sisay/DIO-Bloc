@@ -10,8 +10,9 @@ class CreatePostEvent extends PostEvent{
   CreatePostEvent({required this.title, required this.body});
 }
 class UpdatePostEvent extends PostEvent{
-  final Post post;
-  UpdatePostEvent({required this.post});
+  final Post originalPost;
+  final Post updatedPost;
+  UpdatePostEvent({required this.originalPost, required this.updatedPost});
 }
 class DeletePostEvent extends PostEvent{
   final Post post;
