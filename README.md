@@ -1,7 +1,44 @@
-# Post App
+# Post App Using Bloc and Dio
+
+<table border="1" cellspacing="0" cellpadding="8">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>ID</th>
+      <th>Section</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Basliel Sisay</td>
+      <td>UGR/3563/16</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
 
 Flutter application designed to demonstrate essential CRUD (Create, Read, Update, Delete) operations using advanced state management and robust RESTful API integration. The application connects to the publicly available JSONPlaceholder API to simulate interacting with a live web server database
 
+## Features
+
+- Create new post entries
+   
+- Read/view all posts from API
+
+- Update post titles and content
+  
+- Delete post listings
+  
+- Mock data persistence (ID 101 tracking)
+  
+- Real time UI list updates
+  
+- Input form validation
+  
+- Loading state indicators
+  
+- Error handling and reporting
+  
 ## Technical Architecture
 
 The project is built on a structured architecture that isolates data models, network logic, state management, and the UI components
