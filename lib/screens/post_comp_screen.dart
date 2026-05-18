@@ -112,7 +112,10 @@ class _PostFormerScreenState extends State<PostFormerScreen> {
                         title: _titleController.text,
                         body: _bodyController.text,
                       );
-                      BlocProvider.of<PostBloc>(context).add(UpdatePostEvent(post: updatedPost));
+                      BlocProvider.of<PostBloc>(context).add(UpdatePostEvent(
+                        originalPost: widget.post!,
+                        updatedPost: updatedPost,
+                      ));
                     } 
                     else{
                       BlocProvider.of<PostBloc>(context).add(CreatePostEvent(
