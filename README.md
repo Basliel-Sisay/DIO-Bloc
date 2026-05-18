@@ -50,3 +50,27 @@ The project is built on a structured architecture that isolates data models, net
 - State Management Layer (Bloc): Application state changes are controlled by a PostBloc component that handles unidirectional data flow. It receives explicit PostEvent triggers (such as LoadPostsEvent, CreatePostEvent, and UpdatePostEvent), processes asynchronous execution streams and emits immutable PostState changes to the user interface
   
 - Presentation Layer (UI Screens): The presentation layer uses a two-screen layout consisting of a PostDashboardScreen (the main scrollable hub) and a PostFormerScreen (a dynamic, validated input form that handles both entry creation and record updates natively)
+
+## Output
+
+### 1. Test One Creation
+
+![](https://i.ibb.co/W48jcgQb/Screenshot-2026-05-18-220820.png)
+
+### 2. Test Two, Multiple Creation
+
+![](https://i.ibb.co/dsLsBV6W/Screenshot-2026-05-18-212948.png)
+
+### 3. Test Three Updating
+
+#### Before Updating
+
+![](https://i.ibb.co/SXyNPDxz/Screenshot-2026-05-18-213027.png)
+
+#### After Updating
+
+![](https://i.ibb.co/LdCgSw32/Screenshot-2026-05-18-213045.png)
+
+### 4. Deletion
+
+![](https://i.ibb.co/SDG1k531/Screenshot-2026-05-18-213106.png)
