@@ -12,7 +12,7 @@ class PostDashboardScreen extends StatefulWidget{
   State<PostDashboardScreen> createState() => _PostDashboardScreenState();
 }
 
-class _PostDashboardScreenState extends State<PostDashboardScreen> {
+class _PostDashboardScreenState extends State<PostDashboardScreen>{
   @override
   void initState(){
     super.initState();
@@ -55,7 +55,7 @@ class _PostDashboardScreenState extends State<PostDashboardScreen> {
             else{
               return ListView.builder(
                 itemCount: state.posts.length,
-                itemBuilder: (context, index) {
+                itemBuilder: (context, index){
                   final post = state.posts[index];
                   return Card(
                     margin: const EdgeInsets.only(
@@ -72,7 +72,10 @@ class _PostDashboardScreenState extends State<PostDashboardScreen> {
                             post.title,
                             maxLines: 1,
                             overflow: TextOverflow.ellipsis,
-                            style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                            style: const TextStyle(
+                              fontWeight: FontWeight.bold, 
+                              fontSize: 16,
+                            ),
                           ),
                           subtitle: Text(
                             post.body,
@@ -102,7 +105,9 @@ class _PostDashboardScreenState extends State<PostDashboardScreen> {
                                   Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                      builder: (context) => PostFormerScreen(post: post),
+                                      builder: (context) => PostFormerScreen(
+                                        post: post,
+                                      ),
                                     ),
                                   );
                                 },
